@@ -24,10 +24,16 @@
 
 /* Temperature */
 .temp p {
+    display: inline;
     font-size: 4rem;
     font-weight: 400;
 }
+.temp span{
+    margin-left: 5px;
+    font-size: 4rem;
+    font-weight: 400;
 
+}
 /* Location  */
 .time-location {
     font-size: 2rem;
