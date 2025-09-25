@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>      
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="weather_container">
-            <div class="temp">
-                <p>20</p>
-                <span>&#8451;</span>
-            </div>
-            <div class="time-location">
-                <p class="location">Kathmandu</p>
-                <p class="time">11:11 - Monday 2025-09-09</p>
-            </div>
-            <div class="condition">
-                <p></p>
-                <p class="condition-type">Mist</p>
-            </div>
 
-        </div>
+<body>
+  <div class="container">
+    <div class="weather-container">
+      <div class="temp">
+        <p>20</p>
+        <span>&#8451;</span>
+      </div>
+      <div class="time-location">
+        <p class="location">Kathmandu, Nepal</p>
+        <p class="time">11:11 - Monday 2025-09-09</p>
+      </div>
+      <div class="condition">
+        <img class="icon" src="//cdn.weatherapi.com/weather/64x64/night/143.png" alt="Weather Icon">
+        <p class="condition-type">Mist</p>
+      </div>
     </div>
-    <nav>
-        <form action="">
-            <input class="search" type="text" placeholder="Search for location">
-            <button class="btn" type="submit">Search</button>
-        </form>
-    </nav>
-<script src="main.js"></script>
+  </div>
+
+  <nav>
+    <form class="form">
+      <input class="search" type="text" placeholder="Search for location">
+      <div class="suggestions"></div>
+      <button class="btn" type="submit">Search</button>
+    </form>
+  </nav>
+
+  <script src="main.js"></script>
 </body>
+
 </html>
